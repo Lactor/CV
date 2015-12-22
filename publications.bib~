@@ -1,0 +1,13 @@
+@article{Torrey11122015,
+author = {Torrey, Paul and Wellons, Sarah and Machado, Francisco and Griffen, Brendan and Nelson, Dylan and Rodriguez-Gomez, Vicente and McKinnon, Ryan and Pillepich, Annalisa and Ma, Chung-Pei and Vogelsberger, Mark and Springel, Volker and Hernquist, Lars}, 
+title = {An analysis of the evolving comoving number density of galaxies in hydrodynamical simulations},
+volume = {454}, 
+number = {3}, 
+pages = {2770-2786}, 
+year = {2015}, 
+doi = {10.1093/mnras/stv1986}, 
+abstract ={We present an analysis of the evolving comoving cumulative number density of galaxy populations found in the Illustris simulation. Cumulative number density is commonly used to link galaxy populations across different epochs by assuming that galaxies preserve their number density in time. Our analysis allows us to examine the extent to which this assumption holds in the presence of galaxy mergers or when rank ordering is broken owing to variable stellar growth rates. Our primary results are as follows: (1) the inferred average stellar mass evolution obtained via a constant comoving number density assumption is systematically biased compared to the merger tree results at the factor of ∼2(4) level when tracking galaxies from redshift z = 0 to 2(3); (2) the median number density evolution for galaxy populations tracked forward in time is shallower than for galaxy populations tracked backward; (3) a similar evolution in the median number density of tracked galaxy populations is found regardless of whether number density is assigned via stellar mass, stellar velocity dispersion, or halo mass; (4) explicit tracking reveals a large diversity in the stellar and dark matter assembly histories that cannot be captured by constant number density analyses; (5) the significant scatter in galaxy linking methods is only marginally reduced (∼20 per cent) by considering additional physical galaxy properties. We provide fits for the median evolution in number density for use with observational data and discuss the implications of our analysis for interpreting multi-epoch galaxy property observations.}, 
+URL = {http://mnras.oxfordjournals.org/content/454/3/2770.abstract}, 
+eprint = {http://mnras.oxfordjournals.org/content/454/3/2770.full.pdf+html}, 
+journal = {Monthly Notices of the Royal Astronomical Society} 
+}

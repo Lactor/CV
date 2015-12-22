@@ -24,26 +24,26 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt,letterpaper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\documentclass[11pt,letterpaper,sans,aps]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
 \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
-
 \usepackage[scale=0.85]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\newcommand{\myname}[1]{\underline{\textit{Francisco Machado}}}
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
 \firstname{Francisco} % Your first name
-\familyname{Machado} % Your last name
+\familyname{Leal Machado} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
-\title{Resume}
+\title{Curriculum Vitae}
 \address{28 Fenway Drive}{Boston, MA 02215}
 \mobile{(617) 682-9735}
 \email{fmachado@mit.edu}
@@ -66,7 +66,7 @@
 
 
 \cventry{2013--2016}{Massachusetts Institute of Technology}{\newline{}Candidate for Bachelor of Science Degree in Physics}{\newline{}Cambridge, MA}{\newline{}\textbf{GPA -- 5.0/5.0}}{}
-\cventry{2012--2013}{Universidade de Coimbra}{\newline{}Candidate for Bachelor of Science Degree in Physics}{\newline{}Coimbra, Portugal}{\newline{}\textbf{GPA -- 5.0/5.0}}{} % Arguments not required can be left empty
+\cventry{2012--2013}{Universidade de Coimbra}{\newline{}Candidate for Licence in Physics}{\newline{}Coimbra, Portugal}{\newline{}\textbf{GPA -- 5.0/5.0}}{} 
 
 
 
@@ -76,16 +76,23 @@
 
 \section{Experience - Research}
 
-\cventry{2015--Present}{Undergraduate Research}{\textsc{MIT Center for Material Science and Engineering}}{Cambridge}{Massachusetts}{Research in transport properties of electrons in low-dimensional materials.
+\cventry{2015--Present}{Undergraduate Research}{\textsc{MIT Solid State Solar Thermal Energy Conversion (S$^3$TEC)}}{Cambridge}{Massachusetts}{Research in surface plasmon induced enhancement in electronic transitions
+  \begin{itemize}
+  \item Developing the code that will calculate the rates of the electronic transitions with different electromagnetic backgrounds.
+  \item Designing different plasmon plasmon modes in order to selectively enhance particular transitions for an atom near the surface of our material.
+  \end{itemize}
+}
+
+\cventry{2015}{Undergraduate Research}{\textsc{MIT Center for Material Science and Engineering}}{Cambridge}{Massachusetts}{Research in transport properties of electrons in low-dimensional materials.
 \begin{itemize}
-\item Fabrication of devices which includes selection of proper material flakes, their charecterization and assembly in final device to be used in measurements.
-\item Developing new device configurations to allow the better measurement of transport properties.
+\item Fabricated devices which included selecting proper material flakes, charecterizating their properties and assembling in final device to be used in measurements.
+\item Developed new device configurations to allow the better measurement of transport properties.
 \end{itemize}}
 
 \cventry{2014}{Undergraduate Research}{\textsc{MIT Kavli Institute for Astrophysics and Space Research}}{Cambridge}{Massachusetts}{Research in spectral data from galaxies from a simulation of the galaxy
 \begin{itemize}
-\item Analyzing how to make use of the simulated galaxies informations to better understand the properties of observable galaxies.
-\item Developing tools that allow the matching between simulated and observed galaxies.
+\item Analyzed how to make use of the simulated galaxies informations to better understand the properties of observable galaxies.
+\item Developed tools that allow the matching between simulated and observed galaxies.
 \end{itemize}}
 
 \cventry{2014}{Undergraduate Research}{\textsc{MIT Aerospace Computational Design Lab}}{Cambridge}{Massachusetts}{Research in optimization of a numerical simulation of a stationary fluid flow
@@ -97,7 +104,7 @@
 \cventry{2012--2013}{Undergraduate Research}{\textsc{Universidade de Coimbra - Physics Department}}{Coimbra}{Portugal}{Research in the topic of the dynamics of proteins and their protein reporter using computer simulations and stochastic models.
 \begin{itemize}
 \item Developed the simulation code used to run the simulations in the project.
-\item Compiled and analyzed the data, presenting it at two conferences
+\item Compiled and analyzed the data, presenting it at at a conferences
 \item Presented results in poster format at the International Conference on Stem Cells for Drug Screening and Regenerative Medicine (2013)
 %\item Currently working on broadening the search parameters of the simulation and implementing different protein behaviors in order to analyze different outcomes and later compare them with experimental data.
 \end{itemize}}
@@ -120,14 +127,6 @@
 \end{itemize}
 }
 
-%-----------------------------------------------------------------------------------%
-%      Summer Schools
-%-----------------------------------------------------------------------------------%
-
-\section{Summer Schools}
-
-\cvitem{2015}{Novos Talentos Em Matem\'{a}tica Dynamical Systems Summer School}
-
 
 %------------------------------------------------------------------------------------
 %	AWARDS SECTION
@@ -136,13 +135,49 @@
 
 \section{Awards}
 
+\cvitem{2015}{Winner of the Edward C. Pickering Award for the most Outstanding Original Project in the MIT Physics Junior Lab}
+\cvitem{2013}{3\% Best Students Award at the University of Coimbra}
+\cvitem{2013}{Bronze Medal at the ACM SouthWestern Regional Contest}
 \cvitem{2012}{Bronze Medal at the International Physics Olympiads}
 \cvitem{2012}{Bronze Medal at the International Olympiads of Informatics}
-\cvitem{2013}{Bronze Medal at the ACM SouthWestern Regional Contest}
 \cvitem{2012}{Gold Medal at the Portuguese University Programming Marathon}
+\cvitem{2012}{Third Place in the Portuguese Olympiads of Informatics}
 \cvitem{2011}{Honorable Mention at the IberoAmerican Mathematics Olympiads}
 \cvitem{2011, 2012}{Silver Medal at the Portuguese Mathematics Olympiads}
-\cvitem{2012}{Third Place in the Portuguese Olympiads of Informatics}
+
+
+%----------------------------------------------------------------------------------------
+% Publications
+%----------------------------------------------------------------------------------------
+
+%\section{Publications}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}
+
+
+%----------------------------------------------------------------------------------------
+% Conferences
+%----------------------------------------------------------------------------------------
+
+\section{Conferences}
+
+\cventry{2013}{International Conference on Stem Cells for Drug Screening and Regenerative Medicine}{}{}{}
+{
+  \begin{itemize}
+  \item Presented poster ``Following the Stochastic Dynamics of Nanog Through a Fluorescent Reporter - A Computational Study`` on work on DNA dynamics
+  \end{itemize}
+}
+
+
+%-----------------------------------------------------------------------------------%
+%      Summer Schools
+%-----------------------------------------------------------------------------------%
+
+\section{Summer Schools}
+
+\cvitem{2015}{Novos Talentos Em Matem\'{a}tica Dynamical Systems Summer School}
+
 
 
 %----------------------------------------------------------------------------------------
@@ -170,6 +205,7 @@
 \cvitem{Spanish}{Basic}
 \cvitem{French}{Basic}
 \cvitem{German}{Basic}
+
 
 %----------------------------------------------------------------------------------------
 
