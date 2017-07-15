@@ -1,7 +1,6 @@
-My current CV.
+My current Resume and CV.
 
-Note from the template's creator
-
+============================
 
 "ModernCV" CV and Cover Letter
 LaTe X Template
